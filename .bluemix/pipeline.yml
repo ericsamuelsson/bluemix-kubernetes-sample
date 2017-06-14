@@ -24,15 +24,6 @@ stages:
   triggers:
   - type: stage
   properties:
-  - name: BLUEMIX_USER
-    type: text
-  - name: BLUEMIX_PASSWORD
-    type: secure
-  - name: BLUEMIX_ACCOUNT
-    type: secure
-  - name: CLUSTER_NAME
-    type: text
-    value: Kate
   jobs:
   - name: Deploy
     type: deployer
@@ -40,12 +31,9 @@ stages:
       region_id: ${PROD_REGION_ID}
       organization: ${PROD_ORG_NAME}
       space: ${PROD_SPACE_NAME}
-      application: Pipeline
       account_id: afa6e1022c70c386d9a0b70b9038cc9c
       api_key: 89UqsVi6H69Uo7IPNuPc0dk_0OwAG-mCsRqIQBRmGd6v
       kubernetes_cluster_id: 65482c998e8945c79fec3b3dc027a459
     script: |
       #!/bin/bash
-      . ./install_bx.sh
-      ./bx_login.sh
       ./deploy.sh
