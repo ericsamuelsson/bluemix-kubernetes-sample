@@ -41,13 +41,11 @@ stages:
       organization: ${PROD_ORG_NAME}
       space: ${PROD_SPACE_NAME}
       application: Pipeline
+      account_id: afa6e1022c70c386d9a0b70b9038cc9c
+      api_key_id: ApiKey-a2ece42e-0e36-4bfd-83ad-78b96856539a
+      kubernetes_cluster_id: 65482c998e8945c79fec3b3dc027a459
     script: |
       #!/bin/bash
       . ./install_bx.sh
       ./bx_login.sh
       ./deploy.sh
-hooks:
-- enabled: true
-  label: null
-  ssl_enabled: false
-  url: https://devops-api-integration.stage1.ng.bluemix.net/v1/messaging/webhook/publish
