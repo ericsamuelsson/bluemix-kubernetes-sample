@@ -42,7 +42,7 @@ stages:
       space: ${PROD_SPACE_NAME}
       application: Pipeline
       account_id: afa6e1022c70c386d9a0b70b9038cc9c
-      api_key_id: ApiKey-a2ece42e-0e36-4bfd-83ad-78b96856539a
+      api_key: 89UqsVi6H69Uo7IPNuPc0dk_0OwAG-mCsRqIQBRmGd6v
       kubernetes_cluster_id: 65482c998e8945c79fec3b3dc027a459
     script: |
       #!/bin/bash
