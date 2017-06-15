@@ -41,8 +41,7 @@
           "type": "password",
           "readonly": false,
           "title": "API key",
-          "key": "prod-api-key",
-          "required": true
+          "key": "prod-api-key"
         },
 		{
 		  "type": "select",
@@ -59,8 +58,7 @@
           "type": "text",
           "readonly": false,
           "title": "Cluster name",
-          "key": "prod-cluster",
-          "required": true
+          "key": "prod-cluster"
         }
     ]
 }
