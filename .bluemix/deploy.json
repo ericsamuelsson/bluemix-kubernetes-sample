@@ -38,7 +38,7 @@
           "title": "Region"
 		},
         {
-          "type": "text",
+          "type": "password",
           "readonly": false,
           "title": "API key",
           "key": "prod-api-key"
