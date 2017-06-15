@@ -27,8 +27,7 @@ sample-build:
      content: $file(pipeline.yml)
      env:
       SAMPLE_REPO: "sample-repo"
-      CLUSTER_ID: "{{deploy.parameters.prod-cluster-id}}"
-      ACCOUNT_ID: "{{deploy.parameters.prod-account-id}}"
+      CLUSTER_NAME: "{{deploy.parameters.prod-cluster}}"
       API_KEY: "{{deploy.parameters.prod-api-key}}"
       PROD_SPACE_NAME: "{{deploy.parameters.prod-space}}"
       PROD_ORG_NAME: "{{deploy.parameters.prod-organization}}"
