@@ -17,20 +17,16 @@
             "description": "The bluemix space",
             "type": "string"
         },
-       "prod-account-id": {
-            "description": "The id of your IAM account",
-            "type": "string"
-        },
        "prod-api-key": {
             "description": "The value of your Bluemix API key",
             "type": "string"
         },
-       "prod-cluster-id": {
-            "description": "The id of your Kubernets cluster",
+       "prod-cluster": {
+            "description": "The name of your Kubernets cluster",
             "type": "string"
         }
     },
-    "required": ["prod-region", "prod-organization", "prod-space", "prod-account-id", "prod-api-key", "prod-cluster-id"],
+    "required": ["prod-region", "prod-organization", "prod-space", "prod-api-key", "prod-cluster"],
     "form": [
        {
           "type": "validator",
@@ -41,12 +37,6 @@
 		  "key": "prod-region",
           "title": "Region"
 		},
-        {
-          "type": "text",
-          "readonly": false,
-          "title": "Account id",
-          "key": "prod-account-id"
-        },
         {
           "type": "text",
           "readonly": false,
@@ -67,8 +57,8 @@
         {
           "type": "text",
           "readonly": false,
-          "title": "Cluster id",
-          "key": "prod-cluster-id"
+          "title": "Cluster name",
+          "key": "prod-cluster"
         }
     ]
 }
